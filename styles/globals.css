@@ -1,16 +1,135 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import "~@fontsource/open-sans/index.css";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+.ql-container {
+  border-style: none !important;
+  font-size: 16px !important;
+}
+
+.tox-tinymce {
+  border: 0px !important;
+}
+
+.tox .tox-tbtn svg {
+  fill: #5d656c !important;
+  transform: scale(0.85) !important;
+  opacity: 0.8 !important;
+}
+
+/* modal style - overriding ant design style */
+
+.ant-modal-footer {
+  /* px-4 py-3 w-full flex justify-center items-center gap-3 text-md border-t border-gray-200 */
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-btn {
+  width: 12rem;
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
+  border-radius: 0.25rem !important;
+  text-align: center;
+}
+
+/* .ant-modal-footer button:focus{
+  outline: none;
+} */
+
+/* .ant-dropdown-menu-title-content{
+  
+  font-size: 30px !important;
+    font-weight: 600;
+    padding: 7px;
+    color: #002851;
+}
+.ant-dropdown-menu-title-content:hover{
+  color: #002851 !important;
+
+} */
+/*Container, container body, iframe*/
+/* .mce-tinymce, .mce-container-body, #code_ifr {
+  min-height: 100% !important;
+} */
+/*Container body*/
+/* .mce-container-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+/*Editing area*/
+/* .mce-container-body .mce-edit-area {
+  position: absolute;
+  top: 69px;
+  bottom: 37px;
+  left: 0;
+  right: 0;
+}
+/*Footer*/
+/*.mce-tinymce .mce-statusbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+/* .tox .tox-tinymce .tox-platform-touch {
+  /* height: cal(100vh - 300px); */
+/* min-height: 1200px; */
+/* }  */
+
+/* .tox-tinymce{
+  height: calc(100vh - 700px);
+} */
+
+/*Scrollbar*/
+
+/* that is currently Firefox-only */
+ {
+  scrollbar-width: thin !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 2px;
+}
+
+/*Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 2px #333333;  */
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7a848c;
+  /* #abb9c7; */
+  opacity: 0.5;
+  border-radius: 10px;
+
+  max-height: 40px;
+  overflow-y: scroll;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #7685b6;  */
+  opacity: 0.9;
+}
+::-webkit-scrollbar-corner {
+  background-color: #1c2237;
+}
+
+/* ::-webkit-scrollbar-corner     
+::-webkit-resizer   */
